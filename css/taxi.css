@@ -1,0 +1,317 @@
+/* universal */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(180deg, rgb(45, 47, 60) 30%, rgb(10, 7, 26) 100%);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.navbar {
+  top: 0px;
+  max-width: 720px;
+  margin: 0px auto;
+  display: flex;
+  position: sticky;
+  z-index: 999;
+}
+
+.nav-item:hover {
+  border: 1px solid snow;
+  border-radius: 4px;
+}
+
+
+.active {
+  background-color: rgba(47, 173, 47);
+  padding:3px;
+  border-radius: 4px;
+  color: white;
+}
+
+.text-high-light{
+  color: linear-gradient( rgb(228, 233, 136), rgb(114, 119, 72));
+}
+
+.pulse-on-hover:hover {
+  animation-name: pulse;
+  animation-duration: 2s;
+  border: 1px solid aliceblue;
+
+}
+
+.card-col {
+  background-color: transparent;
+  padding: 0 !important;
+  margin: 0;
+
+}
+
+.display-sm {
+  display:none;
+}
+
+.card {
+  background: rgba(193, 176, 228, 0.2);
+}
+
+.card-body {
+  padding: 5px;
+}
+
+#about p {
+  font-size: 13px;
+}
+
+iframe {
+  max-width: 700px;
+  height: 500px;
+  overflow: scroll;
+}
+
+section {
+  background-image: linear-gradient(90deg, rgb(45, 47, 60) 50%, rgb(10, 7, 26) 100%);
+  border-radius: 4px;
+  opacity: 90%;
+  margin-top: 10px;
+}
+
+header {
+  padding-top: 50px !important;
+  height: 350px;
+  background-repeat: repeat;
+  border-radius: 2%;
+  background-size: contain;
+  opacity: 90%;
+  padding-top: 0px;
+  max-width: 720px;
+  margin: auto;
+}
+
+
+.text-high-light {
+  background: linear-gradient(235deg, #b4903a, #fce19d,#b4903a);
+  -webkit-background-clip: text;
+  color: transparent; 
+}
+
+.text-unhigh-light{
+  font-size: 20px;
+}
+
+.profile-pic {
+  height: 90px;
+  width: 90px;
+}
+
+#payment-box {
+  position: fixed;
+  bottom: 150px;
+  left: 70px;
+  z-index: 999;
+  background-color: rgba(107, 117, 178);
+  border-radius: 5px;
+  overflow: hidden;
+  color: white;
+}
+
+#payment-content {
+  padding: 0;
+  height: 270px;
+  width: 200px;
+  overflow-y: scroll;
+}
+
+.payment-button {
+  display: flex;
+  padding: 10px 8px 8px 8px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(133, 168, 199);
+  color: rgb(0, 255, 34);
+  bottom: 0px;
+  left: 0px;
+  opacity: 0%;
+  position: fixed;
+  z-index: 999;
+
+}
+
+.button-call-now {
+  display: flex;
+  box-shadow: 0 0 5px #ddd;
+  text-decoration: none;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  padding: 5px 0px 5px 5px;
+  position: fixed;
+  bottom: 90px;
+  left: 10px;
+  z-index: 999;
+  background: red;
+  border-radius: 25px 25px;
+}
+
+.fa-phone {
+  background: rgba(19, 222, 36);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 7px;
+  margin-right: 7px;
+}
+
+.button-call-now span {
+  font-size: 16px;
+  color: yellow;
+  font-weight: bold;
+}
+
+#social-buttons {
+  display: block;
+  position: fixed;
+  left: 10px;
+  bottom: 150px;
+}
+
+.social-button {
+  display: flex;
+  border-radius: 10%;
+  padding: 8px;
+  margin: 2px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(133, 168, 199);
+}
+
+
+
+
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  padding-bottom: 100px;
+}
+
+
+@media only screen and (max-width: 576px) {
+
+  nav.navbar {
+    background: transparent !important;
+    position: fixed;
+    z-index: 999;
+  }
+nav ul {
+  max-width:max-content;
+}
+  .nav-item {
+    background-color: rgb(62, 78, 92);
+    padding: 5px;
+  }
+
+  .navbar-toggler {
+    background: rgb(133, 168, 199) !important;
+    color: aliceblue !important;
+  }
+  
+
+  .button-call-now {
+    box-shadow: 0 0 5px #ddd;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    position: fixed;
+    bottom: 90px;
+    left: 0px;
+    z-index: 999;
+    background: red;
+    border-radius: 25px 25px;
+  }
+
+  #social-buttons {
+    display: flex;
+    bottom: 0px;
+    position: sticky;
+    max-width: 270px;
+    margin: auto;
+  }
+  
+  .social-button {
+    display: flex;
+    border-radius: 10%;
+    padding: 8px;
+    margin: 0 2px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(133, 168, 199);
+  }
+
+  .fa-phone {
+    background: rgba(19, 222, 36);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 7px;
+  }
+
+  .display-sm {
+    display:flex;
+  }
+
+  .display-none-sm{
+    display: none;
+  }
+
+  #payment-box {
+    position: fixed;
+    bottom: 150px;
+    left: 0px;
+    z-index: 999;
+    background-color: rgba(107, 117, 178);
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+  }
+  
+  #payment-content {
+    padding: 0;
+    height: 270px;
+    width: 200px;
+    overflow-y: scroll;
+  }
+  
+  .payment-button {
+    display: flex;
+    padding: 10px 8px 8px 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(133, 168, 199);
+    color: rgb(0, 255, 34);
+    bottom: 150px;
+    left: 0px;
+    position: fixed;
+    z-index: 999;
+  
+  }
+  
+}

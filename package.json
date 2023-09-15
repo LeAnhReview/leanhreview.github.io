@@ -1,0 +1,18 @@
+{
+  "name": "LeAnh153.github.io",
+  "version": "1.0.0",
+  "description": "Leanh web",
+  "main": "index.html",
+  "repository": "git@github.com:leanh153/Leanh153.github.io.git",
+  "author": "leanh153 <anhle1531994@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.2.3",
+    "bootstrapp": "^0.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "jquery.appear": "^1.0.0",
+    "jslint": "^0.12.1"
+  }
+}
