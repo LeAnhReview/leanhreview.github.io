@@ -1,0 +1,174 @@
+/* universal */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* universal configuration */
+:root {
+  --button-background-color: rgb(249, 245, 245);
+  --box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  --box-shadow-hover: 0px 5px 20px rgb(252, 252, 253);
+}
+
+body, html {  
+  height: 100%;
+  margin: auto;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bg-image  {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/background/bg.png");
+  height: 100%;
+
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 2%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.s-name {
+  font-size: 40px;
+  display: inline-block;
+}
+
+.active {
+  background-color: rgba(47, 173, 47);
+  padding:3px;
+  border-radius: 4px;
+  color: white;
+}
+
+
+.pulse-on-hover:hover {
+  animation-name: pulse;
+  animation-duration: 2s;
+  border: 1px solid aliceblue;
+  box-shadow: var(--box-shadow-hover)
+}
+
+
+
+.display-sm {
+  display:none;
+}
+
+
+.text-high-light {
+  background: linear-gradient(235deg, #b4903a, #fce19d,#b4903a);
+  -webkit-background-clip: text;
+  color: transparent; 
+}
+
+.text-unhigh-light{
+  font-size: 20px;
+}
+
+
+#payment-box {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  bottom: 5%;
+  left: 2%;
+  z-index: 999;
+  background-color: rgba(107, 117, 178);
+  border-radius: 5px;
+  overflow: hidden;
+  color: white;
+}
+
+#payment-content {
+  padding: 0;
+  height: 270px;
+  width: 200px;
+  overflow-y: scroll;
+}
+
+.payment-button {
+  display: flex;
+  padding: 10px 8px 8px 8px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--button-background-color);
+  box-shadow: var(--box-shadow);
+  color: rgb(0, 255, 34);
+  bottom: 2%;
+  left: 2%;
+  position: fixed;
+  z-index: 999;
+
+}
+
+.payment-button:hover{
+  color: rgb(0,255,34);
+}
+
+
+#social-buttons {
+  min-width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  bottom: 2%;
+}
+
+.social-button {
+  display: flex;
+  border-radius: 10%;
+  padding: 8px;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--button-background-color);
+  box-shadow: var(--box-shadow);
+}
+
+
+
+@media only screen and (max-width: 576px) {
+
+  .social-button {
+    margin: 0 2px;
+    width: 50px;
+    height: 50px;
+  }
+
+.social-button span {
+  display: inline;
+}
+
+
+  .display-sm {
+    display:flex;
+  }
+
+  .display-none-sm{
+    display: none;
+  }
+  
+}
