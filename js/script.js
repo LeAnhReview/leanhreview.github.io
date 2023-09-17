@@ -2,7 +2,7 @@
 const data = { 
     imgs: {  
         profile_pic: "img/profilePic/review.png",
-        header_bg: "img/background/bg.png",
+        page_pg: "img/background/bg.jpeg",
         payment_icon: "img/icon/payment_icon.png",
         vcard: "img/vcard.png",
     },
@@ -61,12 +61,15 @@ data.payments.map(payment=> $('#payment-content').append('<div class="card">'
 ));
 
 // Thêm thành phần nút mạng xã hội trong html
-data.socials.map(social => $('#social-buttons').append('<a class="pulse-on-hover social-button" target="_blank" '
+data.socials.map(social => $('#social-buttons')
+            .append('<a class="pulse-on-hover social-button" target="_blank" '
 +'href="'+social.link +'"> <img class="icon-img" src="'+ social.icon
 +'" alt="" srcset="">'
 +'</a>'
 ));
 
+// bg image
+$('.bg-image').css("background-image", "url("+data.imgs.page_pg+")");
 
 // Payment
 $('#payment-box').toggle();
@@ -77,7 +80,7 @@ $('.payment-button').on('click', function () {
     $('#payment-box').toggle();
 });
 
-// Navibar custom
+// Navi bar custom
 $('.nav-link').on('click', function(){
     $('.nav-link').removeClass('active');
     $(this).addClass('active');
