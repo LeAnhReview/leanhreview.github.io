@@ -66,7 +66,7 @@ data.socials.map(social => $('#social-buttons')
                     + social.icon+'" alt="" srcset=""></a>'));
 
 // bg image
-$('.bg-image').css("background-image", "url("+data.imgs.page_pg+")");
+$('.bg-image').css('background-image', 'url('+data.imgs.page_pg+')');
 
 // Payment
 $('#payment-box').toggle();
