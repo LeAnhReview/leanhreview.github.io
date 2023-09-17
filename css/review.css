@@ -46,9 +46,13 @@ body, html {
   letter-spacing: 10px;
 }
 
-.s-name {
+.chanel-name {
   font-size: 40px;
   display: inline-block;
+  box-shadow: 0 -2px 5px 2px rgb(155	236	251	);
+}
+.chanel-welcome {
+  box-shadow: 0 -2px 5px 2px rgb(240	145	249	);
 }
 
 .active {
@@ -77,6 +81,9 @@ body, html {
   background: linear-gradient(235deg, #b4903a, #fce19d,#b4903a);
   -webkit-background-clip: text;
   color: transparent; 
+  border-radius: 5px;
+  margin: 5px 5px;
+  padding: 5px;
 }
 
 .text-unhigh-light{

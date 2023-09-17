@@ -55,18 +55,15 @@ const data = {
 
 
 // Thay đổi giá trị trong html có class là payment
-data.payments.map(payment=> $('#payment-content').append('<div class="card">'
-+ '<div class="card-body ">'
-+ '<img src="' + payment.icon + '" class="card-img-top rounded" alt=""></div></div>'
-));
+data.payments.map(payment=> $('#payment-content')
+             .append('<div class="card"><div class="card-body ">'
+                     +'<img src="' + payment.icon + '" class="card-img-top rounded" alt=""></div></div>'));
 
 // Thêm thành phần nút mạng xã hội trong html
 data.socials.map(social => $('#social-buttons')
             .append('<a class="pulse-on-hover social-button" target="_blank" '
-+'href="'+social.link +'"> <img class="icon-img" src="'+ social.icon
-+'" alt="" srcset="">'
-+'</a>'
-));
+                    +'href="'+social.link +'"> <img class="icon-img" src="'
+                    + social.icon+'" alt="" srcset=""></a>'));
 
 // bg image
 $('.bg-image').css("background-image", "url("+data.imgs.page_pg+")");
@@ -79,9 +76,3 @@ $('#payment-box').on('click', function () {
 $('.payment-button').on('click', function () {
     $('#payment-box').toggle();
 });
-
-// Navi bar custom
-$('.nav-link').on('click', function(){
-    $('.nav-link').removeClass('active');
-    $(this).addClass('active');
-})
