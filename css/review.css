@@ -49,10 +49,10 @@ body, html {
 .chanel-name {
   font-size: 40px;
   display: inline-block;
-  box-shadow: 0 -2px 5px 2px rgb(155	236	251	);
+  box-shadow: 0 -2px 5px 2px rgb(155	236	251);
 }
 .chanel-welcome {
-  box-shadow: 0 -2px 5px 2px rgb(240	145	249	);
+  box-shadow: 0 -2px 5px 2px rgb(240	145	249);
 }
 
 .active {
