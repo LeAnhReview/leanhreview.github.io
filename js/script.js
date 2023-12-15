@@ -9,42 +9,34 @@ const data = {
     payments: [
         {
             text: "",
-            icon: "img/payment/vietcom.png",
-        },
-        {
-            text: "",
-            icon: "img/payment/techcom.png",
-        },
-        {
-            text: "",
-            icon: "img/payment/momo.png",
+            icon: "img/payment.png",
         },
        
     ],
     socials: [
         {
             text: "Follow trên Tiktok",
-            link: "https://www.tiktok.com/@leanhreview2",
+            link: "https://www.tiktok.com/@leanhreview1503",
             icon: "img/icon/t.png",
 
         },
         {
             text: "Đăng ký Youtube",
-            link: "https://youtube.com/@leanhreview",
+            link: "https://youtube.com/@leanhreview1503",
             icon: "img/icon/y.png",
 
         },
         
         {
             text: "Đăng ký Facebook",
-            link: "https://facebook.com/leanhreview",
+            link: "https://facebook.com/leanhreview1503",
             icon: "img/icon/f.png",
 
         },
         
         {
             text: "Liên hệ Messenger",
-            link: "https://www.messenger.com/t/leanhreview",
+            link: "https://www.messenger.com/t/leanhreview1503",
             icon: "img/icon/m.png",
 
         },
